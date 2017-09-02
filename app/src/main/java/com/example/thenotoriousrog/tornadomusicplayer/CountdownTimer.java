@@ -5,8 +5,6 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
-
 import java.util.concurrent.TimeUnit;
 
 /**

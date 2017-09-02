@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.thenotoriousrog.myapplication.R;
-
 import java.util.ArrayList;
 
 /**

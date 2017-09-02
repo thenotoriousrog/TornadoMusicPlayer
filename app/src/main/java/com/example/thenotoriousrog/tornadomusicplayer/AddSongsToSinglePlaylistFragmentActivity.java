@@ -11,8 +11,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
-
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
