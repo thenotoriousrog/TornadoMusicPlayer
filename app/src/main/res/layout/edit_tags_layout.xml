@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/CornflowerBlue"
+    >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="@android:color/white"
+        android:text="Fix it up!"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Edit Title"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        />
+
+    <EditText
+        android:id="@+id/editSongArtist"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Edit Artist"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/editSongTitle"
+        />
+
+    <EditText
+        android:id="@+id/editSongAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Edit Album"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/editSongArtist"
+        />
+
+    <Button
+        android:id="@+id/editSaveButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        />
+
+    <Button
+        android:id="@+id/editCancelButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Cancel"
+        />
+
+</RelativeLayout>

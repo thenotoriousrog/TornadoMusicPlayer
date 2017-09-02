@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/CornflowerBlue"
+    >
+
+    <TextView
+        android:id="@+id/addfoldertoplaylisttext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add songs in this folder to which playlist?"
+        android:textSize="20dp"
+        />
+
+
+
+    <!-- This is a list of the playlists that users can choose from to add songs into -->
+    <ListView
+        android:id="@+id/addFolderPlaylistList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addfoldertoplaylisttext"
+        android:layout_marginTop="5dp"
+        >
+
+    </ListView>
+
+</RelativeLayout>

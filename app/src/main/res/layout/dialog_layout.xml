@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/CornflowerBlue"
+    >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="@android:color/white"
+        android:text="Select An Action"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:id="@+id/dialogButtonEditTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Tags"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/dialogButtonAddToPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add To Playlist"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/dialogButtonEditTags"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

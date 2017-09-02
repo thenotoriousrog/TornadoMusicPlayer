@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thenotoriousrog.tornadomusicplayer"
+    >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <!--Using the more detailed version of the app icon for now however we can change it whenever we want to. -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_simple"
+        android:label="Tornado Music Player"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- single instance of start up screen only -->
+        <activity android:name=".startUpScreen"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!-- Allows users to pick their directory. -->
+        <activity android:name=".DirectoryPicker"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!-- Allows users to manually enter their music directory -->
+        <activity android:name=".ManualEntry"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!-- Not being used may need to remove -->
+        <activity android:name=".OpenFolderandSongs">
+
+        </activity>
+
+        <!-- Starts the music player and lets browse and play their music. Leaving it as portrait will prevent the loading screen from being shown again. -->
+        <activity android:name=".MusicPlayer"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <!-- Displays a notification so that users can open the app/play music with easy taps and see what songs are playing. -->
+        <service android:name=".NotificationService"></service>
+
+        <!-- This activity allows users to modify all of their playlists at once. -->
+        <activity android:name=".ModifyAllPlaylistsFragmentActivity"></activity>
+
+        <!-- This activity allows users to add songs to one playlist at a time -->
+        <activity android:name=".AddSongsToSinglePlaylistFragmentActivity"></activity>
+
+        <!-- This activity scans the entire phone looking for songs and also populates the mainUIFragment. -->
+        <activity android:name=".EF5ScanActivity"></activity>
+
+    </application>
+
+</manifest>

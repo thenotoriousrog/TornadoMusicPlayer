@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/CornflowerBlue"
+    >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="What shall we do?"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/newPlaylistButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="New Playlist"
+        android:layout_above="@+id/modifyAllPlaylistsButton"
+        />
+
+    <Button
+        android:id="@+id/modifyAllPlaylistsButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Modify All Playlists"
+        android:clickable="true"
+        />
+
+
+
+
+</RelativeLayout>

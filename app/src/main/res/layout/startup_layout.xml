@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/startup_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:id="@+id/Welcome_Screen"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:textColor="@color/bright_blue"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="Welcome to Tornado Music Player!"
+        />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/Welcome_Screen"
+            android:layout_above="@+id/EF5Scan"
+            android:layout_centerInParent="true"
+            android:src="@drawable/torwald"
+            />
+
+
+         <Button
+             android:id="@+id/EF5Scan"
+             style="@style/Widget.AppCompat.Button"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_above="@+id/SelectInternal"
+             android:text="EF5 Scan" />
+
+        <Button
+            android:id="@+id/ManualEntry"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Manual entry" />
+
+        <Button
+            android:id="@+id/SelectSDCARD"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ManualEntry"
+            android:layout_alignParentRight="true"
+            android:translationX="-105px"
+            android:text="Search SDCARD" />
+
+         <Button
+            android:id="@+id/SelectInternal"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ManualEntry"
+            android:layout_alignParentLeft="true"
+             android:translationX="105px"
+            android:text="Search Internal"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- This imageview shows a touch_icon icon so the user know know to touch_icon the icon and then be able to perform the drag down operation. -->
+    <ImageView
+        android:id="@+id/touchIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/touch_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <!-- This imageview shows the drag icon after a user touches a song item. So they will know to drag down below. -->
+    <ImageView
+        android:id="@+id/dragIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/drag_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/SongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:typeface="monospace"
+        android:height="30dp"
+        android:text="Songffffffffffffffffffffffffffff"
+
+        android:paddingTop="5dp"
+        android:paddingLeft="45dp"
+
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:maxLength="27"
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+
+
+        android:layout_alignLeft="@+id/dragIcon"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <TextView
+        android:id="@+id/ArtistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:gravity="left"
+        android:typeface="monospace"
+        android:height="20dp"
+        android:text="Song"
+        android:paddingLeft="45dp"
+        android:paddingBottom="1dp"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxLength="27"
+
+        android:layout_below="@+id/SongName"
+        android:layout_alignLeft="@+id/dragIcon"
+        android:layout_alignParentStart="true"
+        />
+
+
+</RelativeLayout>

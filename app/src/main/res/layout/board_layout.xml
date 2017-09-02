@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Have two separate BoardViews so that users can see there playlists at once. very important, also we want to line up from the bottom-->
+    <com.woxthebox.draglistview.BoardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/songs_board_view"
+        android:background="@color/background_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
+
+
+
+

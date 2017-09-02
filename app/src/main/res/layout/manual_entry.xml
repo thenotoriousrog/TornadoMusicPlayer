@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_blue"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/manualTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Manual Entry"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_weight="0.13" />
+
+    <EditText
+        android:id="@+id/enteredPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/Submit"
+        android:hint="Enter the path to your music folder" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit" />
+
+</RelativeLayout>

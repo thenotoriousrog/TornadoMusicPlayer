@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/SongNameOrder"
+        android:title="Order by song name..."
+        />
+
+    <item
+        android:id="@+id/ArtistNameOrder"
+        android:title="Order by artist name..."
+        />
+
+    <item
+        android:id="@+id/SongDurationOrder"
+        android:title="Order by song duration...."
+        />
+
+
+</menu>

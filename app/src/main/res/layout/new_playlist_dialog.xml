@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/CornflowerBlue"
+    >
+
+    <EditText
+        android:id="@+id/playlistEnterField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter name of playlist.."
+        />
+
+    <Button
+        android:id="@+id/playlistConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:text="Confirm"
+        />
+
+</RelativeLayout>

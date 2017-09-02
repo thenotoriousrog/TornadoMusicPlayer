@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/AddToPlaylistOption"
+        android:title="Add to playlist..."
+        />
+
+    <item
+        android:id="@+id/EditTagsOption"
+        android:title="Edit tags"
+        />
+
+</menu>

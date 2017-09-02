@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/PlaylistRemoveSong"
+        android:title="Remove from playlist"
+        />
+
+    <item
+        android:id="@+id/PlaylistEditTags"
+        android:title="Edit Tags"
+        />
+
+
+</menu>
