@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.util.List;
 

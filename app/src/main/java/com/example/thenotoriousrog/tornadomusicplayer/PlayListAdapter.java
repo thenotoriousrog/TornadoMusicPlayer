@@ -10,8 +10,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
-
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 import java.util.List;
 
 /**
@@ -48,7 +47,7 @@ public class PlayListAdapter extends ArrayAdapter<Playlist> {
         if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(com.example.thenotoriousrog.myapplication.R.layout.playlist_list, null); // this is what expands the items in the list
+            v = vi.inflate(com.example.thenotoriousrog.tornadomusicplayer.R.layout.playlist_list, null); // this is what expands the items in the list
         }
 
         //SongInfo info = getItem(position);
@@ -58,8 +57,8 @@ public class PlayListAdapter extends ArrayAdapter<Playlist> {
 
         if (playlist.name() != null && playlist.songs() != null) // make sure that the playlist we grabbed is not corrupted.
         {
-            TextView playListName = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.playListName); // allows us to get the name of the playlist.
-            final ImageView optionsMenu = (ImageView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.playlistOptionsMenu); // get the options menu item for the playlists.
+            TextView playListName = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.playListName); // allows us to get the name of the playlist.
+            final ImageView optionsMenu = (ImageView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.playlistOptionsMenu); // get the options menu item for the playlists.
 
             // Whenever the image is clicked, we want to inflate the options menu and perform specific actions on that specific menu.
             optionsMenu.setOnClickListener(new View.OnClickListener() {

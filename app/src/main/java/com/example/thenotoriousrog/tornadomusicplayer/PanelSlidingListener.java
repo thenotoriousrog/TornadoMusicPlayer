@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.io.ByteArrayInputStream;
@@ -240,7 +240,7 @@ public class PanelSlidingListener implements SlidingUpPanelLayout.PanelSlideList
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            Bitmap bm = BitmapFactory.decodeResource(currentActivity.getResources(), R.drawable.tornado_album_art); // set the default album art for the song.
+            Bitmap bm = BitmapFactory.decodeResource(currentActivity.getResources(), R.drawable.applogo); // set the default album art for the song.
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }

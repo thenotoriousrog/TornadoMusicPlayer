@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;
 
 import org.cmc.music.common.ID3WriteException;
 import org.cmc.music.metadata.MusicMetadata;
@@ -120,13 +120,13 @@ public class PlaylistSongPopupMenuClickListener implements PopupMenu.OnMenuItemC
         {
             // create an additional dialog box that will let the user enter the song fields, and then we want to modify the song based on that.
             final Dialog editDialog = new Dialog(context); // create the dialog for the user to be able to edit the tags of the song.
-            editDialog.setContentView(com.example.thenotoriousrog.myapplication.R.layout.edit_tags_layout); // set the layout for when users want to change the tags of the song itself.
+            editDialog.setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.edit_tags_layout); // set the layout for when users want to change the tags of the song itself.
             editDialog.setTitle("Fix it up!");
 
-            Button saveButton = (Button) editDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.editSaveButton); // save button that will change the tags of the song based on what is selected.
-            Button cancelButton = (Button) editDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.editCancelButton); // cancel button that will let people
-            final EditText songTitle = (EditText) editDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.editSongTitle); // song title edit field.
-            final EditText songArtist = (EditText) editDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.editSongArtist); // song artist edit field.
+            Button saveButton = (Button) editDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.editSaveButton); // save button that will change the tags of the song based on what is selected.
+            Button cancelButton = (Button) editDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.editCancelButton); // cancel button that will let people
+            final EditText songTitle = (EditText) editDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.editSongTitle); // song title edit field.
+            final EditText songArtist = (EditText) editDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.editSongArtist); // song artist edit field.
             final EditText songAlbum = (EditText) editDialog.findViewById(R.id.editSongAlbum); // song album edit field.
 
             editDialog.show(); // show the edit dialog.

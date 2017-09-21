@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;
 
 import java.util.List;
 
@@ -38,15 +38,15 @@ public class FolderSongAdapter extends ArrayAdapter<SongInfo> {
         if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(com.example.thenotoriousrog.myapplication.R.layout.playlist_songlist, null); // inflate the song list with the image of the item that we want to see.
+            v = vi.inflate(com.example.thenotoriousrog.tornadomusicplayer.R.layout.playlist_songlist, null); // inflate the song list with the image of the item that we want to see.
         }
 
         SongInfo info = getItem(position);
 
         if (info != null) // make sure that the SongInfo item exists after adapter gets the item
         {
-            TextView songNameText = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.SongName); // text view for song name
-            TextView artistNameText = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.ArtistName); // text view for artist name
+            TextView songNameText = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.SongName); // text view for song name
+            TextView artistNameText = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.ArtistName); // text view for artist name
             TextView songDurationText = (TextView) v.findViewById(R.id.SongDuration); // text view for the song duration, which we will have to have a count down timer for by the way!
 
             if (songNameText != null) {

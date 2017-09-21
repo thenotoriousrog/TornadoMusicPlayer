@@ -42,12 +42,12 @@ public class AddPlaylistButtonClickListener implements FloatingActionButton.OnCl
         playlistButtonDialog.dismiss(); // dismiss the first dialog because it is no longer needed now.
 
         final Dialog playListCreationDialog = new Dialog(v.getContext());
-        playListCreationDialog.setContentView(com.example.thenotoriousrog.myapplication.R.layout.new_playlist_dialog); // set the dialog for a user to create their playlist.
+        playListCreationDialog.setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.new_playlist_dialog); // set the dialog for a user to create their playlist.
         //playListCreationDialog.setTitle("Creating a playlist..."); not needed.
         playListCreationDialog.show(); // show the dialog box!
 
-        final EditText enterPlaylistNameField = (EditText) playListCreationDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.playlistEnterField); // set the field that the user will enter their playlist name.
-        Button playListConfirmButton = (Button) playListCreationDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.playlistConfirmButton); // Confirm button for when a user Finishes entering the name of their playlist.
+        final EditText enterPlaylistNameField = (EditText) playListCreationDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.playlistEnterField); // set the field that the user will enter their playlist name.
+        Button playListConfirmButton = (Button) playListCreationDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.playlistConfirmButton); // Confirm button for when a user Finishes entering the name of their playlist.
 
         // set behavior for when a user hits the confirm button.
         // TODO: we simply want to just modify only the first playlist!
@@ -64,10 +64,10 @@ public class AddPlaylistButtonClickListener implements FloatingActionButton.OnCl
 
 
                 final Dialog addSongsDialog = new Dialog((v.getContext()));
-                addSongsDialog.setContentView(com.example.thenotoriousrog.myapplication.R.layout.addsongsdialog); // set the view for this dialog.
+                addSongsDialog.setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.addsongsdialog); // set the view for this dialog.
                 addSongsDialog.setTitle("Do you want to add songs to your playlist?");
-                Button yesButton = (Button) addSongsDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.yesButton); // grab yes button.
-                Button noButton = (Button) addSongsDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.noButton); // grab no button.
+                Button yesButton = (Button) addSongsDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.yesButton); // grab yes button.
+                Button noButton = (Button) addSongsDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.noButton); // grab no button.
                 addSongsDialog.show();
 
                 // set behavior for when the user presses yes.
@@ -196,10 +196,10 @@ public class AddPlaylistButtonClickListener implements FloatingActionButton.OnCl
     {
         // TODO: create the new playlist_plusbutton_dialog here and ask users for their response.
         final Dialog playlistButtonDialog = new Dialog(v.getContext()); // this is the very first dialog when the button is pushed.
-        playlistButtonDialog.setContentView(com.example.thenotoriousrog.myapplication.R.layout.playlist_plusbutton_dialog);
+        playlistButtonDialog.setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.playlist_plusbutton_dialog);
         playlistButtonDialog.show(); // show the first dialog.
 
-        Button newPlaylistButton = (Button) playlistButtonDialog.findViewById(com.example.thenotoriousrog.myapplication.R.id.newPlaylistButton); // grab our button
+        Button newPlaylistButton = (Button) playlistButtonDialog.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.newPlaylistButton); // grab our button
         newPlaylistButton.setOnClickListener(new View.OnClickListener() {
 
             // calls the method that is in charge of creating a new playlist.

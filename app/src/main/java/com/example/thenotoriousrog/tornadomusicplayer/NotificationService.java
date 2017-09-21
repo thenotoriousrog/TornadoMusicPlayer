@@ -17,7 +17,7 @@ import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -91,7 +91,7 @@ public class NotificationService extends Service {
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.tornado_album_art); // set the default album art for the song.
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.applogo); // set the default album art for the song.
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }

@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 /**
  * Created by thenotoriousrog on 7/1/17.
@@ -27,7 +27,7 @@ public class LoadingScreenFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View view = inflater.inflate(com.example.thenotoriousrog.myapplication.R.layout.loading_screen, container, false); // inflate the loading screen. Nothing too fancy here.
+        View view = inflater.inflate(com.example.thenotoriousrog.tornadomusicplayer.R.layout.loading_screen, container, false); // inflate the loading screen. Nothing too fancy here.
 
         // use object animator to flip image while we are loading.
         ObjectAnimator spin = ObjectAnimator.ofFloat(view.findViewById(R.id.tornado), "rotationY", 0.0f, 720.0f); // spin the tornado image for two full revolutions.

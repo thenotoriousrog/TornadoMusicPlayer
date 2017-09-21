@@ -3,174 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/a851c5c315a8e86e305a4d9df2b87c0030fcab65/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bac44c68e01dc7bbc6d4ab144bf66806f0719b20/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/8b2893be218dffada7d6e0dc5e7fb2913c79f8db/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f446674afd2f805ccb0468e79fa6883ab3c4f34d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/73e913e8704f8d852a0c79c723019c54fc31f042/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5ace5c799a3de8671a9142836cfffb808135048/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/1e32ac6e9802406adc325d425279291700247355/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="746c13855c58e0dc0d51d4ab5b5159ef74954210">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_08c449e3953fac466adcf9821c1536f204c372da/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/1283c27023f4aea96347a673735f9d89b26b840e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94ceb3bb41a8e26ee5a1b3bcffa60d545b9cd210/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/24de18a4a2aabbda14e9028e1e967e7ebb07d5cf/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_328ab9405f2a49bb0e2e58f92361fb52eb827323/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/cd47672736157712b84ddc07cae366d961106b8f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bc64e3b7a54336f0bd09d7b13611294d0242b724/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/9e6768d672fefca1d035fb2c1112260c9c575984/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_281e84d89dfa60fc0f4d576e09c6dcd1921da865/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/e2de6a7c8eb70bffe9910289d6a2058b11b155eb/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_51520819d86e4042ebf9b8e04d04c761b69eaa38/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/b5ba8eba948a348e865db1bb2ff2d2412ab3e2c6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ab8a4903076897a8fe029433ba0c3c3f958712ce">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a05011d6b0af0be030ee6c046c30ceb141a118a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="384b04059b98e246db4a133eb261c9c2149ea0b7">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8280254368dc3bff6d6963bf0517865f02328919/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/libs/MyID3_for_Android.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="36069803c7ed5def20d753420857f40a5a91cd06">
         <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/MyID3_for_Android_d32389732ca3c1d3bc10018cb68fc83194fe1998/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/a81347685ff1e6cf1c17118c8c8db00cf2a73ac5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f57eab33e35b363b6253f3db54df82861423245b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_040fa9fcbca24ee8aa5ff3155a4a7f5bcb8808da/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/a60bcd88a7dd9883ce3834f5bc5fd74fad30c8b9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c11866dd42a3f2b281af0cf18160f0ff9f216245">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ca56863711d5782c4e18e705dd210bc7b90a6251/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/511795671c4b9b7e218228c09ad048929c5b6128/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba938a0e16029e521585222e7401faf1faa8ef0c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_f0af4c8a18d00cba6b8f4d885c0f0c262cf95b1c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/a11b6cd4b9f439449bb28ebbc2bd92b3bad64805/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d28fe7ebd45f977083766bbd21b3bc3e64eda81c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/fe732afca078f465ba46bf3d15930ef71fbabfae/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a44c5824e24959fd69e7be66fc7aec8fa126d570/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,21 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/fc582e3ac94c343ec6fae9bfbf163dd4ab58d136/output/jars/classes.jar"
+        jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f6d26d3710babc64c06655ab259c8975a71c71e5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/thenotoriousrog/.android/build-cache/586249cdcc7c74c9ba22fa6cacbbe5710784d425/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f10e8bea9fe9e8b6d6c59bdde1287f159a35059/classes.dex" />
+        sha1="add0348a84b0443d9bc10bd6889f929759d8fd7c">
+        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8280254368dc3bff6d6963bf0517865f02328919/classes.dex" />
     </item>
 
 </items>

@@ -8,7 +8,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 import com.woxthebox.draglistview.DragItem;
 
 
@@ -24,10 +24,10 @@ public class DragSongItem extends DragItem {
 
     @Override
     public void onBindDragView(View clickedView, View dragView) {
-        CharSequence text = ((TextView) clickedView.findViewById(com.example.thenotoriousrog.myapplication.R.id.text)).getText();
-        ((TextView) dragView.findViewById(com.example.thenotoriousrog.myapplication.R.id.text)).setText(text);
-        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.myapplication.R.id.card));
-        CardView clickedCard = ((CardView) clickedView.findViewById(com.example.thenotoriousrog.myapplication.R.id.card));
+        CharSequence text = ((TextView) clickedView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.text)).getText();
+        ((TextView) dragView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.text)).setText(text);
+        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.card));
+        CardView clickedCard = ((CardView) clickedView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.card));
 
         dragCard.setMaxCardElevation(40);
         dragCard.setCardElevation(clickedCard.getCardElevation());
@@ -39,8 +39,8 @@ public class DragSongItem extends DragItem {
 
     @Override
     public void onMeasureDragView(View clickedView, View dragView) {
-        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.myapplication.R.id.card));
-        CardView clickedCard = ((CardView) clickedView.findViewById(com.example.thenotoriousrog.myapplication.R.id.card));
+        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.card));
+        CardView clickedCard = ((CardView) clickedView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.card));
         int widthDiff = dragCard.getPaddingLeft() - clickedCard.getPaddingLeft() + dragCard.getPaddingRight() -
                 clickedCard.getPaddingRight();
         int heightDiff = dragCard.getPaddingTop() - clickedCard.getPaddingTop() + dragCard.getPaddingBottom() -
@@ -56,7 +56,7 @@ public class DragSongItem extends DragItem {
 
     @Override
     public void onStartDragAnimation(View dragView) {
-        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.myapplication.R.id.card));
+        CardView dragCard = ((CardView) dragView.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.card));
         ObjectAnimator anim = ObjectAnimator.ofFloat(dragCard, "CardElevation", dragCard.getCardElevation(), 40);
         anim.setInterpolator(new DecelerateInterpolator());
         anim.setDuration(ANIMATION_DURATION - 200); // try to make animation quicker.

@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.RelativeLayout;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class MusicPlayer extends Activity {
         super.onCreate(savedInstanceState);
 
         // todo: we may have to reset this layout as this is going to be called when the notification is called again. This is a problem.
-        setContentView(com.example.thenotoriousrog.myapplication.R.layout.startup_layout); // only setting this for the purpose of resetting it later.
+        setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.startup_layout); // only setting this for the purpose of resetting it later.
 
         Intent intent = getIntent(); // get the intent that started this activity.
 
@@ -177,7 +177,7 @@ public class MusicPlayer extends Activity {
 
         mainUIFragment.setArguments(fragmentArgs); // set the arguments for the fragment.
 
-        RelativeLayout startupLayout = (RelativeLayout) findViewById(com.example.thenotoriousrog.myapplication.R.id.startup_layout); // grab the startup layout so we can remove it when we are finished.
+        RelativeLayout startupLayout = (RelativeLayout) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.startup_layout); // grab the startup layout so we can remove it when we are finished.
         startupLayout.removeAllViews(); // remove all views from this view.
         startupLayout.setBackground(null); // ensure no background is present after we have loaded the mainUIFragment.
 
@@ -185,7 +185,7 @@ public class MusicPlayer extends Activity {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
         //transaction.show(mainFragment);
-        transaction.replace(com.example.thenotoriousrog.myapplication.R.id.startup_layout, mainUIFragment); // replace the loading screen with the main layout.
+        transaction.replace(com.example.thenotoriousrog.tornadomusicplayer.R.id.startup_layout, mainUIFragment); // replace the loading screen with the main layout.
         transaction.addToBackStack(null); // nothing to go back when the user hits the back button.
         transaction.commit(); // commit the fragment to be shown.
 
@@ -198,7 +198,7 @@ public class MusicPlayer extends Activity {
         System.out.println("original song list that we are using when loading songs is " + songs);
 
         // todo: make the startup layout to be a fragment so that we can get rid of this. This is horrible design principle, but this works for now anyway.
-        RelativeLayout startuplayout = (RelativeLayout) findViewById(com.example.thenotoriousrog.myapplication.R.id.startup_layout); // get the startup layout here.
+        RelativeLayout startuplayout = (RelativeLayout) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.startup_layout); // get the startup layout here.
         startuplayout.removeAllViews(); // remove all the views from this layout.
         startuplayout.setBackground(null); // this completely removes the background of our startup layout. Which does not fix our activity.
 
@@ -216,7 +216,7 @@ public class MusicPlayer extends Activity {
             protected Boolean doInBackground(Void... params)
             {
 
-                mainLayoutTransaction.replace(com.example.thenotoriousrog.myapplication.R.id.startup_layout, loadingScreenFragment);
+                mainLayoutTransaction.replace(com.example.thenotoriousrog.tornadomusicplayer.R.id.startup_layout, loadingScreenFragment);
                 //mainLayoutTransaction.addToBackStack(null);
                 mainLayoutTransaction.show(loadingScreenFragment);
                 mainLayoutTransaction.commit(); // show this fragment while waiting for the songsInfo list to be set.

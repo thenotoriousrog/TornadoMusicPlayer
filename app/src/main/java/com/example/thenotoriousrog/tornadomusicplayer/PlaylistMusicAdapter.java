@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.util.List;
 
@@ -57,17 +57,17 @@ public class PlaylistMusicAdapter extends ArrayAdapter<SongInfo> {
         if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(com.example.thenotoriousrog.myapplication.R.layout.songlist, null); // this is what expands the items in the list
+            v = vi.inflate(com.example.thenotoriousrog.tornadomusicplayer.R.layout.songlist, null); // this is what expands the items in the list
         }
 
         final SongInfo info = getItem(position); // set to final because it is needed for the options menu. If it causes problems remove the final modifier and think of a different way to get this.
 
         if (info != null) // make sure that the SongInfo item exists after adapter gets the item
         {
-            TextView songNameText = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.SongName); // text view for song name
-            TextView artistNameText = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.ArtistName); // text view for artist name
-            TextView songDurationText = (TextView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.SongDuration); // text view for the song duration, which we will have to have a count down timer for by the way!
-            final ImageView optionsMenu = (ImageView) v.findViewById(com.example.thenotoriousrog.myapplication.R.id.songOptionsMenu); // get the options menu image for the song.
+            TextView songNameText = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.SongName); // text view for song name
+            TextView artistNameText = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.ArtistName); // text view for artist name
+            TextView songDurationText = (TextView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.SongDuration); // text view for the song duration, which we will have to have a count down timer for by the way!
+            final ImageView optionsMenu = (ImageView) v.findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.songOptionsMenu); // get the options menu image for the song.
 
             // Whenever the image is clicked, we want to inflate the options menu and perform specific actions on that specific menu.
             optionsMenu.setOnClickListener(new View.OnClickListener() {

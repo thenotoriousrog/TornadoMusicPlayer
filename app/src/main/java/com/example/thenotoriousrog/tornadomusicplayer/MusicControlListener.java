@@ -7,7 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;
 
 import java.io.IOException;
 import java.util.Random;

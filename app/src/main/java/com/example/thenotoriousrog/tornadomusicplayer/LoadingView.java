@@ -12,7 +12,7 @@ import android.os.SystemClock;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.io.InputStream;
 

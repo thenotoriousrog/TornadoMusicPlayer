@@ -37,7 +37,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -81,9 +81,9 @@ public class DirectoryPicker extends ListActivity {
             }
         }
 
-        setContentView(com.example.thenotoriousrog.myapplication.R.layout.chooser_list);
+        setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.chooser_list);
         setTitle(dir.getAbsolutePath());
-        Button btnChoose = (Button) findViewById(com.example.thenotoriousrog.myapplication.R.id.btnChoose);
+        Button btnChoose = (Button) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.btnChoose);
         String name = dir.getName();
         if(name.length() == 0)
             name = "/";

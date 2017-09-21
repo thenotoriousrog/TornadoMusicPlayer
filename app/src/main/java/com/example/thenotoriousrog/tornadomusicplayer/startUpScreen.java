@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;
 
 /**
  * Created by thenotoriousrog on 6/11/17.
@@ -30,10 +30,10 @@ public class startUpScreen extends Activity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.thenotoriousrog.myapplication.R.layout.startup_layout);
-        LoadingView loadingView = (LoadingView) findViewById(com.example.thenotoriousrog.myapplication.R.id.gifView);
+        setContentView(com.example.thenotoriousrog.tornadomusicplayer.R.layout.startup_layout);
+        LoadingView loadingView = (LoadingView) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.gifView);
 
-        EF5Scan = (Button) findViewById(com.example.thenotoriousrog.myapplication.R.id.EF5Scan); // grab our button
+        EF5Scan = (Button) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.EF5Scan); // grab our button
         EF5Scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -51,7 +51,7 @@ public class startUpScreen extends Activity {
         });
 
         // create and define behavior for Select Internal button
-        selectInternal = (Button) findViewById(com.example.thenotoriousrog.myapplication.R.id.SelectInternal); // button used to select internal storage.
+        selectInternal = (Button) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.SelectInternal); // button used to select internal storage.
         selectInternal.setOnClickListener(new View.OnClickListener() {
 
             // this uses the storage/emulated/0 directory to search inside the directory for us to be able to find songs.
@@ -63,7 +63,7 @@ public class startUpScreen extends Activity {
         });
 
         // create and define behavior for Select SDCARD button
-        selectSDCARD = (Button) findViewById(com.example.thenotoriousrog.myapplication.R.id.SelectSDCARD); // button for selecting SD card storage
+        selectSDCARD = (Button) findViewById(com.example.thenotoriousrog.tornadomusicplayer.R.id.SelectSDCARD); // button for selecting SD card storage
         selectSDCARD.setOnClickListener(new View.OnClickListener() {
 
             // this will require that we use the default "/storage/" directory in hopes that we will be able to find the SD card.

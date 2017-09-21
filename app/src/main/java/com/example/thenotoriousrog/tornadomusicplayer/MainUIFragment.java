@@ -24,7 +24,7 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.io.File;

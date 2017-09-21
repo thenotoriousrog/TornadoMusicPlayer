@@ -10,7 +10,7 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.widget.RelativeLayout;
 
-import com.example.thenotoriousrog.myapplication.R;
+import com.example.thenotoriousrog.tornadomusicplayer.R;
 
 import java.io.File;
 import java.util.ArrayList;
