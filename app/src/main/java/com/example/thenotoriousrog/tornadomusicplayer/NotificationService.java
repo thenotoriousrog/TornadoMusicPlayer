@@ -73,6 +73,9 @@ public class NotificationService extends Service {
         currentSong.getandSetSongInfo(songPath); // extract the info from the song itself.
 
         albumArt = extractAlbumArt(currentSong); // extract the album art manually just like it is done in the PanelSlidingListener
+
+        // TODO: this returns null which is not good. We need to have a bit of a more slimmed down version of the logo because it is causing the app to crash.
+
     }
 
     // this method will attempt to extract the album art from the current song that is playing.
@@ -91,7 +94,7 @@ public class NotificationService extends Service {
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.applogo); // set the default album art for the song.
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.tornado_album_art); // set the default album art for the song.
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }

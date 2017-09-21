@@ -2,10 +2,12 @@ package com.example.thenotoriousrog.tornadomusicplayer;
 
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
@@ -224,6 +226,47 @@ public class PanelSlidingListener implements SlidingUpPanelLayout.PanelSlideList
         return playedSongs.pop(); // pop the last item added in the stack.
     }
 
+    // calculates the size of the bitmap that we need to use for the logo.
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight)
+    {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) >= reqHeight
+                    && (halfWidth / inSampleSize) >= reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+
+        return inSampleSize;
+    }
+
+    // helps get the bitmap size that we need to scale down the logo
+    public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId, int reqWidth, int reqHeight)
+    {
+
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(res, resId, options);
+
+        // Calculate inSampleSize
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(res, resId, options);
+    }
+
     // this method will attempt to extract the album art from the current song that is playing.
     private Bitmap extractAlbumArt(SongInfo currentSongPlaying)
     {
@@ -240,7 +283,11 @@ public class PanelSlidingListener implements SlidingUpPanelLayout.PanelSlideList
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            Bitmap bm = BitmapFactory.decodeResource(currentActivity.getResources(), R.drawable.applogo); // set the default album art for the song.
+            BitmapFactory.Options opt = new BitmapFactory.Options();
+            opt.inJustDecodeBounds = false;
+            opt.inScaled = true;
+            Bitmap bm = decodeSampledBitmapFromResource(currentActivity.getResources(), R.drawable.applogo, 400, 400); // send the bitmap to be processed so that the app will work correctly!
+            //Bitmap map = Bitmap.createScaledBitmap(bm, 200, 200, true);
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }
@@ -394,6 +441,7 @@ public class PanelSlidingListener implements SlidingUpPanelLayout.PanelSlideList
 
         songText.setText(currentSongTitle); // shows the name of current song playing.
         artistText.setText(currentArtistName); // shows the name of the artist of the current song playing.
+        //albumArt.setImageResource(R.drawable.applogo);
         albumArt.setImageBitmap(currentAlbumArt); // shows the album art of the current song playing.
         upNext.setText(upNextText); // shows what song is going to be playing next in the list.
         refreshNotificationDisplay(); // update the information on the notification display.
