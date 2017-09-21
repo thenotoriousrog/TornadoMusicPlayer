@@ -283,11 +283,7 @@ public class PanelSlidingListener implements SlidingUpPanelLayout.PanelSlideList
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            BitmapFactory.Options opt = new BitmapFactory.Options();
-            opt.inJustDecodeBounds = false;
-            opt.inScaled = true;
             Bitmap bm = decodeSampledBitmapFromResource(currentActivity.getResources(), R.drawable.applogo, 400, 400); // send the bitmap to be processed so that the app will work correctly!
-            //Bitmap map = Bitmap.createScaledBitmap(bm, 200, 200, true);
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }

@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
@@ -78,6 +79,47 @@ public class NotificationService extends Service {
 
     }
 
+    // calculates the size of the bitmap that we need to use for the logo.
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight)
+    {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) >= reqHeight
+                    && (halfWidth / inSampleSize) >= reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+
+        return inSampleSize;
+    }
+
+    // helps get the bitmap size that we need to scale down the logo
+    public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId, int reqWidth, int reqHeight)
+    {
+
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(res, resId, options);
+
+        // Calculate inSampleSize
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(res, resId, options);
+    }
+
     // this method will attempt to extract the album art from the current song that is playing.
     private Bitmap extractAlbumArt(SongInfo currentSongPlaying)
     {
@@ -94,7 +136,7 @@ public class NotificationService extends Service {
         }
         else // the album art is null, return the Bitmap with the default tornado image!
         {
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.tornado_album_art); // set the default album art for the song.
+            Bitmap bm = decodeSampledBitmapFromResource(getApplicationContext().getResources(), R.drawable.applogo, 400, 400); // send the bitmap to be processed so that the app will work correctly!
             mmr.release(); // release the mmr to free up resources on the device.
             return bm; // return the bitmap
         }

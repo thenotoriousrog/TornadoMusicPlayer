@@ -119,6 +119,24 @@
         <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/pre-dexed/debug/classes_f6d26d3710babc64c06655ab259c8975a71c71e5.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="add0348a84b0443d9bc10bd6889f929759d8fd7c">
+        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8280254368dc3bff6d6963bf0517865f02328919/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/libs/MyID3_for_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="36069803c7ed5def20d753420857f40a5a91cd06">
+        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/MyID3_for_Android_d32389732ca3c1d3bc10018cb68fc83194fe1998/classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="/home/thenotoriousrog/.android/build-cache/1e32ac6e9802406adc325d425279291700247355/output/jars/classes.jar"
         jumboMode="false"
@@ -153,6 +171,15 @@
         revision="25.0.2"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
         <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_f0af4c8a18d00cba6b8f4d885c0f0c262cf95b1c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/thenotoriousrog/StudioProjects/TornadoMusicPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e3f92f9782bfd0db098962cac93d56f17fbb8e1/classes.dex" />
     </item>
     <item
         is-multidex="false"
