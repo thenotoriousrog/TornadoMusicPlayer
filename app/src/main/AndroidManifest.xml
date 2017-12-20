@@ -14,7 +14,7 @@
         android:label="Tornado Music Player"
         android:supportsRtl="true"
         android:hardwareAccelerated="false">
-        <activity android:name=".MainActivity"
+        <activity android:name=".Activities.MainActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleInstance"
 
@@ -27,47 +27,47 @@
         </activity>
 
         <!-- single instance of start up screen only -->
-        <activity android:name=".startUpScreen"
+        <activity android:name=".Activities.startUpScreen"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait">
 
         </activity>
 
         <!-- Allows users to pick their directory. -->
-        <activity android:name=".DirectoryPicker"
+        <activity android:name=".UI.DirectoryPicker"
             android:screenOrientation="portrait">
 
         </activity>
 
         <!-- Allows users to manually enter their music directory -->
-        <activity android:name=".ManualEntry"
+        <activity android:name=".Activities.ManualEntry"
             android:screenOrientation="portrait">
 
         </activity>
 
         <!-- Not being used may need to remove -->
-        <activity android:name=".OpenFolderandSongs">
+        <activity android:name=".Activities.OpenFolderandSongs">
 
         </activity>
 
         <!-- Starts the music player and lets browse and play their music. Leaving it as portrait will prevent the loading screen from being shown again. -->
-        <activity android:name=".MusicPlayer"
+        <activity android:name=".Activities.MusicPlayer"
             android:screenOrientation="portrait"
             >
 
         </activity>
 
         <!-- Displays a notification so that users can open the app/play music with easy taps and see what songs are playing. -->
-        <service android:name=".NotificationService"></service>
+        <service android:name=".UI.NotificationService"></service>
 
         <!-- This activity allows users to modify all of their playlists at once. -->
-        <activity android:name=".ModifyAllPlaylistsFragmentActivity"></activity>
+        <activity android:name=".Fragments.ModifyAllPlaylistsFragmentActivity"></activity>
 
         <!-- This activity allows users to add songs to one playlist at a time -->
-        <activity android:name=".AddSongsToSinglePlaylistFragmentActivity"></activity>
+        <activity android:name=".Fragments.AddSongsToSinglePlaylistFragmentActivity"></activity>
 
         <!-- This activity scans the entire phone looking for songs and also populates the mainUIFragment. -->
-        <activity android:name=".EF5ScanActivity"></activity>
+        <activity android:name=".Activities.EF5ScanActivity"></activity>
 
     </application>
 

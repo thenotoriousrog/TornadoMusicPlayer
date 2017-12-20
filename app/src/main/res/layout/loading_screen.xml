@@ -20,7 +20,7 @@
         />
 
     <!-- removing because we are changing what exactly is spinning.
-    <com.example.thenotoriousrog.tornadomusicplayer.LoadingView
+    <com.example.thenotoriousrog.tornadomusicplayer.UI.LoadingView
         android:id="@+id/torwald_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
