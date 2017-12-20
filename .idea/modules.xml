@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TornadoMusicPlayer.iml" filepath="$PROJECT_DIR$/.idea/TornadoMusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TornadoMusicPlayer.iml" filepath="$PROJECT_DIR$/TornadoMusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tornadomusicplayer2/tornadomusicplayer2.iml" filepath="$PROJECT_DIR$/tornadomusicplayer2/tornadomusicplayer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tornadomusicplayer2/tornadomusicplayer2.iml" filepath="$PROJECT_DIR$/tornadomusicplayer2/tornadomusicplayer2.iml" />
     </modules>
   </component>
 </project>

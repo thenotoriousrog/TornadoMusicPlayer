@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/status_bar_big" android:layout_width="fill_parent" android:layout_height="128.0dip"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:id="@+id/status_bar_big"
+    android:layout_width="match_parent"
+    android:layout_height="128.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/WhiteSmoke"
+    >
 
     <ImageView
         android:id="@+id/status_bar_album_art_big"

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/WhiteSmoke"
     android:weightSum="1"
     android:baselineAligned="false">
 
@@ -29,7 +29,7 @@
             android:layout_below="@id/Welcome_Screen"
             android:layout_above="@+id/EF5Scan"
             android:layout_centerInParent="true"
-            android:src="@drawable/torwald"
+            android:src="@drawable/applogo"
             />
 
 

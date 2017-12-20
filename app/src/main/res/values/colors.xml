@@ -18,7 +18,6 @@
     <!-- Transparent -->
     <color name="transparent">#00000000</color>
 
-    <!-- Black -->
     <color name="black">#ff000000</color>
     <color name="white">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>
